@@ -1,0 +1,31 @@
+{ "name": "subjlog1707-pmb",
+  "version": "1.0.0",
+  "description": "A simple logger function that can remember a subject.",
+  "keywords": [ "debug", "logging" ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/subjlog1707-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/subjlog1707-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/subjlog1707-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "log.js",
+  "scripts": { "test": "nodejs test.usage.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+    "equal-pmb": "^0.1.13",
+    "usnam-pmb": "^0.2.3"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
