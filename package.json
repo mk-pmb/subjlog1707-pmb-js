@@ -1,5 +1,5 @@
 { "name": "subjlog1707-pmb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple logger function that can remember a subject.",
   "keywords": [ "debug", "logging" ],
 

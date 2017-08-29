@@ -4,7 +4,7 @@
 
 var arSlc = Array.prototype.slice;
 
-function makeLogger(subj) {
+function makeLogger(subj, initCfg) {
   function log(msg) {
     if (arguments.length === 0) { return log.entries; }
     if (arguments.length > 1) { msg = arSlc.call(arguments); }
@@ -16,6 +16,7 @@ function makeLogger(subj) {
   log.subj = subj;
   log.entries = [];
   log.cfg = function (opt) { return (Object.assign(log, opt) && log.subj); };
+  log.cfg(initCfg);
   log.l8r = function (msg) {
     return function log_l8r() {
       log.apply(null, (msg === undefined ? arguments
