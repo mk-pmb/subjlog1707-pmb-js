@@ -14,7 +14,11 @@ function makeLogger(subj, initCfg) {
   }
   log.toString = function () { return '[logger for ' + log.subj + ']'; };
   log.subj = subj;
-  log.entries = [];
+  log.clear = function () {
+    log.entries = [];
+    return log.subj;
+  };
+  log.clear();
   log.cfg = function (opt) { return (Object.assign(log, opt) && log.subj); };
   log.cfg(initCfg);
   log.l8r = function (msg) {
